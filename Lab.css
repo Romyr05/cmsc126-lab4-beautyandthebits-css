@@ -49,6 +49,56 @@ Focus on applying proper CSS techniques such as:
 
 
 /*ORDER CSS */
+.coffeeImg{
+    width:120px;
+    height:120px;
+}
+
+.coffeeImg:hover{
+   opacity:0.8
+}
+
+.coffeeTitle{
+    font-size:24px;
+    font-weight:bold;
+    background:#6b3e26;
+    color:white;
+}
+
+.label{
+    text-align:center;
+    font-weight:normal;
+    font-weight:bold;
+}
+
+#coffee_choices td{
+    padding:10px;
+}
+
+.coffee form{
+    border: 2px solid #6b3e26;
+    border-radius: 15px;
+    padding: 20px;
+    width: 350px;
+    background-color: #f8f5f2;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.coffee input,
+.coffee select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"]{
+    background-color: #6b3e26;
+    color: white;
+    font-weight: bold;
+}
 
 
 
