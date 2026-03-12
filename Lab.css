@@ -49,14 +49,262 @@ Focus on applying proper CSS techniques such as:
 
 
 /*ORDER CSS */
+body.order{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6efe7;
+    color: #3e2c23;
+}
 
+/* Header */
+body.order header{
+    width: 90%;
+    margin: 20px auto 10px auto;
+    text-align: left;
+}
 
+body.order #title{
+    display: inline-block;
+    margin: 0;
+    padding: 10px 18px;
+    border: 2px solid #6f4e37;
+    border-radius: 10px;
+    background-color: #fffaf5;
+    color: #6f4e37;
+    font-size: 28px;
+    font-weight: bold;
+}
 
+body.order header hr{
+    margin-top: 18px;
+    border: none;
+    border-top: 2px solid #6f4e37;
+}
 
+/* Navigation */
+body.order .navBar{
+    width: 90%;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #6f4e37;
+    background-color: #e8d3bd;
+    overflow: hidden;
+    border-radius: 10px;
+}
 
+body.order .navigation{
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #3e2c23;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 16px 0;
+    border-right: 2px solid #6f4e37;
+    transition: 0.3s;
+}
 
+body.order .navigation:last-child{
+    border-right: none;
+}
 
+body.order .navigation:hover{
+    background-color: #6f4e37;
+    color: white;
+}
 
+/* Banner */
+body.order #banner{
+    display: block;
+    width: 90%;
+    max-width: 1100px;
+    height: 320px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 18px;
+    border: 3px solid #6f4e37;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
 
+/* Top and bottom links */
+body.order a[href="#bottomPage"],
+body.order a[href="#title"]{
+    display: block;
+    width: fit-content;
+    margin: 15px auto;
+    text-decoration: none;
+    color: #6f4e37;
+    font-weight: bold;
+}
+
+body.order a[href="#bottomPage"]:hover,
+body.order a[href="#title"]:hover{
+    text-decoration: underline;
+}
+
+/* Section containers */
+body.order .coffee{
+    width: 88%;
+    margin: 25px auto;
+    padding: 25px;
+    background: #fffaf5;
+    border: 2px solid #d7b899;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Tagline and title */
+body.order #tagline{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+body.order .coffee h2{
+    text-align: center;
+    color: #6f4e37;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+/* Menu table */
+body.order #coffee_choices{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px 12px;
+    text-align: center;
+}
+
+body.order .coffeeTitle{
+    font-size: 24px;
+    font-weight: bold;
+    color: #6f4e37;
+    background: #ecd8c2;
+    border: 2px solid #6f4e37;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+body.order .coffeeImg{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #6f4e37;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+body.order .label{
+    font-size: 15px;
+    font-weight: bold;
+    color: #3e2c23;
+    background: #f3e3d3;
+    padding: 10px 8px;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+/* Form section */
+body.order form{
+    width: 420px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background: #f8eee4;
+    border: 2px solid #6f4e37;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+body.order form label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #6f4e37;
+    font-size: 16px;
+}
+
+body.order form input[type="text"],
+body.order form input[type="email"],
+body.order form select{
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #c8a98c;
+    border-radius: 10px;
+    font-size: 15px;
+    background: white;
+    color: #3e2c23;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+body.order form input[type="text"]:focus,
+body.order form input[type="email"]:focus,
+body.order form select:focus{
+    outline: none;
+    border-color: #6f4e37;
+}
+
+body.order form input[type="submit"]{
+    display: block;
+    width: 180px;
+    margin: 20px auto 0 auto;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 35px;
+    background: #6f4e37;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+body.order form input[type="submit"]:hover{
+    background: #4e3525;
+    transform: scale(1.05);
+}
+
+/* Horizontal line */
+body.order hr{
+    width: 90%;
+    border: none;
+    border-top: 2px solid #6f4e37;
+    margin: 25px auto;
+}
+
+/* Footer */
+body.order footer{
+    background: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+body.order footer #title{
+    display: block;
+    border: none;
+    background: none;
+    color: white;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+body.order .contacts{
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
 
 /*ABOUT CSS */
