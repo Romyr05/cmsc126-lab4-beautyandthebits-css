@@ -31,16 +31,15 @@ Focus on applying proper CSS techniques such as:
 
 */
 
-/* WHOLEPAGE CSS
-
-
-*/
+/* WHOLEPAGE CSS*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /*HOMEPAGE CSS */
 body.home{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
     background: #f6efe7;
     color: #3e2c23;
 }
@@ -202,7 +201,6 @@ body.home .coffee li:nth-of-type(odd) {
 
 body.home .coffee:nth-of-type(3) {
     text-align: justify;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
 }
 
@@ -283,7 +281,6 @@ body.home .contacts{
 body.order{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
     background: #f6efe7;
     color: #3e2c23;
 }
@@ -543,7 +540,6 @@ body.order .contacts{
 body.about{
     margin:0;
     padding:0;
-    font-family: Arial, Helvetica, sans-serif;
     background:#f6efe7;
     color:#3e2c23;
 }
