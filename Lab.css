@@ -308,3 +308,188 @@ body.order .contacts{
 }
 
 /*ABOUT CSS */
+
+body.about{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f6efe7;
+    color:#3e2c23;
+}
+
+/* HEADER */
+body.about header{
+    width:90%;
+    margin:20px auto 10px auto;
+}
+
+body.about #title{
+    display:inline-block;
+    padding:10px 18px;
+    border:2px solid #6f4e37;
+    border-radius:10px;
+    background:#fffaf5;
+    color:#6f4e37;
+    font-size:28px;
+    font-weight:bold;
+}
+
+body.about header hr{
+    border:none;
+    border-top:2px solid #6f4e37;
+}
+
+/* NAVIGATION */
+body.about .navBar{
+    width:90%;
+    margin:20px auto;
+    display:flex;
+    border:2px solid #6f4e37;
+    border-radius:10px;
+    overflow:hidden;
+    background:#e8d3bd;
+}
+
+body.about .navigation{
+    flex:1;
+    text-align:center;
+    padding:15px;
+    font-weight:bold;
+    text-decoration:none;
+    color:#3e2c23;
+    border-right:2px solid #6f4e37;
+}
+
+body.about .navigation:last-child{
+    border-right:none;
+}
+
+body.about .navigation:hover{
+    background:#6f4e37;
+    color:white;
+}
+
+/* BANNER */
+body.about .imgBanner{
+    display:block;
+    width:90%;
+    max-width:1100px;
+    margin:20px auto;
+    border:3px solid #6f4e37;
+    border-radius:18px;
+}
+
+/* LINKS */
+body.about a[href="#bottomPage"],
+body.about a[href="#title"]{
+    display:block;
+    width:fit-content;
+    margin:10px auto;
+    font-weight:bold;
+    text-decoration:none;
+    color:#6f4e37;
+}
+
+/* CONTENT BOX */
+body.about .coffee{
+    width:85%;
+    margin:25px auto;
+    padding:25px;
+    background:#fffaf5;
+    border:2px solid #d7b899;
+    border-radius:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* TEXT */
+body.about .definition{
+    font-size:16px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+body.about .emphasis,
+body.about .term{
+    font-weight:bold;
+    color:#6f4e37;
+}
+
+/* LOGO IMAGE */
+body.about .coffee img.imgBanner{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #6f4e37;
+    display:block;
+    margin:0 auto 15px auto;
+}
+
+/* VIDEOS */
+body.about ul{
+    list-style:none;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+body.about .coffeeVideo{
+    width:300px;
+    height:180px;
+    border-radius:15px;
+    border:3px solid #6f4e37;
+}
+
+/* TEAM TABLE */
+body.about table{
+    width:100%;
+    text-align:center;
+    border-spacing:15px;
+}
+
+body.about .teamMember{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:15px;
+    border:3px solid #6f4e37;
+}
+
+body.about .label{
+    background:#f3e3d3;
+    padding:10px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* RANDOM COFFEE IMAGE */
+body.about .coffee img:not(.teamMember):not(.imgBanner){
+    display:block;
+    width:260px;
+    margin:15px auto;
+    border-radius:15px;
+    border:4px solid #6f4e37;
+}
+
+/* FOOTER */
+body.about footer{
+    background:#6f4e37;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+body.about footer #title{
+    border:none;
+    background:none;
+    color:white;
+    font-size:24px;
+}
+
+body.about .contacts{
+    line-height:1.7;
+}
